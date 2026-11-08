@@ -1,6 +1,7 @@
 export interface SeoToolConfig {
   slug: string;
   title: string;
+  shortTitle: string;
   metaDescription: string;
   badge: string;
   h1: string;
@@ -22,6 +23,7 @@ export const SEO_TOOLS: SeoToolConfig[] = [
   {
     slug: "xrechnung-viewer-online",
     title: "Free XRechnung XML Viewer & PDF Converter Online (Germany E-Rechnung)",
+    shortTitle: "XRechnung Viewer",
     metaDescription:
       "Open, inspect, and convert German XRechnung 3.0 XML e-invoices (UBL & CII) into human-readable PDFs and Excel CSVs online. 100% client-side EN 16931 & Leitweg-ID check.",
     badge: "DE · E-Rechnung Pflicht 2025–2028",
@@ -60,6 +62,7 @@ export const SEO_TOOLS: SeoToolConfig[] = [
   {
     slug: "peppol-ubl-xml-viewer",
     title: "Free PEPPOL BIS 3.0 & UBL 2.1 XML Invoice Viewer & Validator",
+    shortTitle: "PEPPOL UBL Viewer",
     metaDescription:
       "Read, validate, and convert OASIS UBL 2.1 and PEPPOL BIS Billing 3.0 XML invoices into human-readable PDFs and CSV spreadsheets. 100% free & client-side.",
     badge: "EU · OASIS UBL 2.1 & PEPPOL BIS 3.0",
@@ -98,6 +101,7 @@ export const SEO_TOOLS: SeoToolConfig[] = [
   {
     slug: "zugferd-factur-x-xml-reader",
     title: "Free ZUGFeRD & Factur-X CII/UBL XML Reader & Validator",
+    shortTitle: "ZUGFeRD & Factur-X",
     metaDescription:
       "Inspect and validate ZUGFeRD 2.2/2.3 and French Factur-X (UN/CEFACT CrossIndustryInvoice CII & UBL) XML files online. Convert to printable PDF and CSV.",
     badge: "DE / FR · UN/CEFACT CII & ZUGFeRD",
@@ -136,6 +140,7 @@ export const SEO_TOOLS: SeoToolConfig[] = [
   {
     slug: "facturae-xml-visor-pdf",
     title: "Free Facturae 3.2.2 XML to PDF Viewer & Converter Online",
+    shortTitle: "Visor Facturae 3.2.2",
     metaDescription:
       "Visor Facturae 3.2.2 XML online gratis. Convierte facturas electrónicas Facturae (.xml / .xsig FACe España) a PDF legible y Excel CSV en tu navegador.",
     badge: "ES · Facturae 3.2.2 & FACe / Verifactu",
@@ -174,6 +179,7 @@ export const SEO_TOOLS: SeoToolConfig[] = [
   {
     slug: "xrechnung-generator-free",
     title: "Free XRechnung 3.0 XML Generator Online (Leitweg-ID & EN 16931)",
+    shortTitle: "XRechnung Generator",
     metaDescription:
       "Create valid German XRechnung 3.0 (UBL 2.1) XML e-invoices online for free. Includes Leitweg-ID (BT-10), IBAN, VAT calculation, and instant .XML download.",
     badge: "DE · KoSIT XRechnung 3.0 Generator",
@@ -212,6 +218,7 @@ export const SEO_TOOLS: SeoToolConfig[] = [
   {
     slug: "peppol-invoice-generator",
     title: "Free PEPPOL BIS Billing 3.0 UBL XML Invoice Generator",
+    shortTitle: "PEPPOL Generator",
     metaDescription:
       "Generate EN 16931 compliant PEPPOL BIS Billing 3.0 (OASIS UBL 2.1) XML invoices online for free. Automatic VAT subtotals, line items, and instant XML download.",
     badge: "EU · PEPPOL BIS Billing 3.0 Builder",
@@ -250,6 +257,7 @@ export const SEO_TOOLS: SeoToolConfig[] = [
   {
     slug: "xml-invoice-to-excel-csv",
     title: "Convert XML E-Invoice (UBL, XRechnung, Facturae) to Excel CSV",
+    shortTitle: "XML to Excel CSV",
     metaDescription:
       "Extract invoice line items, quantities, unit prices, and VAT rates from UBL 2.1, PEPPOL, XRechnung, ZUGFeRD, and Facturae XML files into Excel CSV online.",
     badge: "ERP & Accounting · XML to CSV Converter",
@@ -288,6 +296,7 @@ export const SEO_TOOLS: SeoToolConfig[] = [
   {
     slug: "en-16931-xml-validator",
     title: "Free EN 16931 E-Invoice XML Schema & Business Rules Validator",
+    shortTitle: "EN 16931 Validator",
     metaDescription:
       "Validate European e-invoice XML files against CEN EN 16931 business rules (BR-01, BR-02, BR-03, BR-06, BR-07, BR-16, BR-CO-15) online in your browser.",
     badge: "CEN / TC 434 · EN 16931 Compliance Audit",
