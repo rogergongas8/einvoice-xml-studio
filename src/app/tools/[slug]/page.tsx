@@ -72,39 +72,39 @@ export default async function ToolSlugPage({ params }: PageProps) {
       />
 
       {/* Technical Highlights & FAQ Section for Programmatic SEO */}
-      <section className="print:hidden bg-ledger border-t border-stoneborder py-12">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
+      <section className="print:hidden bg-neutral-50/60 border-t border-neutral-200/80 py-12">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 space-y-10">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
             {tool.highlights.map((h, i) => (
               <div
                 key={i}
-                className="rounded-2xl bg-ivory border border-stoneborder p-5 shadow-sm"
+                className="rounded-xl bg-white border border-neutral-200/90 p-5 shadow-2xs"
               >
-                <div className="font-mono text-xs font-bold text-copper mb-1">
+                <div className="font-mono text-xs font-semibold text-indigo-600 mb-1">
                   0{i + 1} · EN 16931 SPECIFICATION
                 </div>
-                <h2 className="font-display font-bold text-base text-ink mb-2">
+                <h2 className="font-semibold text-sm text-neutral-900 mb-1.5">
                   {h.title}
                 </h2>
-                <p className="text-xs text-muted leading-relaxed">{h.body}</p>
+                <p className="text-xs text-neutral-600 leading-relaxed">{h.body}</p>
               </div>
             ))}
           </div>
 
           <div className="max-w-3xl">
-            <h2 className="font-display font-bold text-xl text-ink mb-4">
+            <h2 className="font-semibold text-lg text-neutral-900 mb-4">
               Frequently Asked Questions — {tool.h1}
             </h2>
             <div className="space-y-3">
               {tool.faqs.map((f, i) => (
                 <div
                   key={i}
-                  className="rounded-2xl bg-white border border-stoneborder p-5"
+                  className="rounded-xl bg-white border border-neutral-200/90 p-5 shadow-2xs"
                 >
-                  <h3 className="font-display font-bold text-sm text-ink mb-1.5">
+                  <h3 className="font-semibold text-sm text-neutral-900 mb-1.5">
                     {f.question}
                   </h3>
-                  <p className="text-xs text-muted leading-relaxed">{f.answer}</p>
+                  <p className="text-xs text-neutral-600 leading-relaxed">{f.answer}</p>
                 </div>
               ))}
             </div>

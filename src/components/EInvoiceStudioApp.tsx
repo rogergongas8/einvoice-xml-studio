@@ -237,11 +237,8 @@ export function EInvoiceStudioApp({
       {/* Minimalist Top Bar */}
       <header className="print:hidden sticky top-0 z-30 border-b border-neutral-200/80 bg-white/90 backdrop-blur-md">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between gap-4">
-          <Link href="/" className="flex items-center gap-2.5">
-            <InvoiceBrandLogo className="w-7 h-7" />
-            <span className="font-semibold text-base tracking-tight text-neutral-900">
-              XMLInvoice
-            </span>
+          <Link href="/" className="hover:opacity-85 transition-opacity">
+            <InvoiceBrandLogo />
           </Link>
 
           <div className="flex items-center gap-2.5">
@@ -252,7 +249,7 @@ export function EInvoiceStudioApp({
                 onClick={() => setActiveTab("read")}
                 className={`px-3 py-1.5 rounded-md transition-all cursor-pointer ${
                   activeTab === "read"
-                    ? "bg-white text-neutral-900 shadow-2xs"
+                    ? "bg-white text-indigo-700 font-semibold shadow-2xs"
                     : "text-neutral-500 hover:text-neutral-900"
                 }`}
               >
@@ -263,7 +260,7 @@ export function EInvoiceStudioApp({
                 onClick={() => setActiveTab("generate")}
                 className={`px-3 py-1.5 rounded-md transition-all cursor-pointer ${
                   activeTab === "generate"
-                    ? "bg-white text-neutral-900 shadow-2xs"
+                    ? "bg-white text-indigo-700 font-semibold shadow-2xs"
                     : "text-neutral-500 hover:text-neutral-900"
                 }`}
               >
@@ -278,7 +275,7 @@ export function EInvoiceStudioApp({
                 onClick={() => setLang("en")}
                 className={`px-2 py-1.5 rounded-md transition-all cursor-pointer ${
                   lang === "en"
-                    ? "bg-white text-neutral-900 shadow-2xs"
+                    ? "bg-white text-indigo-700 font-semibold shadow-2xs"
                     : "text-neutral-500 hover:text-neutral-900"
                 }`}
               >
@@ -289,7 +286,7 @@ export function EInvoiceStudioApp({
                 onClick={() => setLang("es")}
                 className={`px-2 py-1.5 rounded-md transition-all cursor-pointer ${
                   lang === "es"
-                    ? "bg-white text-neutral-900 shadow-2xs"
+                    ? "bg-white text-indigo-700 font-semibold shadow-2xs"
                     : "text-neutral-500 hover:text-neutral-900"
                 }`}
               >
@@ -383,10 +380,10 @@ export function EInvoiceStudioApp({
                     key={item.key}
                     type="button"
                     onClick={() => handleLoadPreset(item.key)}
-                    className={`px-2.5 py-1.5 rounded-lg text-xs font-medium transition-colors cursor-pointer ${
+                    className={`px-2.5 py-1.5 rounded-lg text-xs font-semibold transition-colors cursor-pointer ${
                       selectedPreset === item.key
-                        ? "bg-neutral-900 text-white"
-                        : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
+                        ? "bg-indigo-600 text-white shadow-xs"
+                        : "bg-neutral-100 text-neutral-600 hover:bg-indigo-50 hover:text-indigo-700"
                     }`}
                   >
                     {item.label}
@@ -428,7 +425,7 @@ export function EInvoiceStudioApp({
                     <button
                       type="button"
                       onClick={() => window.print()}
-                      className="h-9 px-3.5 rounded-lg bg-neutral-900 hover:bg-neutral-800 text-white text-xs font-medium inline-flex items-center gap-1.5 transition-colors cursor-pointer"
+                      className="h-9 px-3.5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold inline-flex items-center gap-1.5 shadow-xs transition-colors cursor-pointer"
                     >
                       <Printer className="w-3.5 h-3.5" />
                       <span>{isEn ? "Save as PDF" : "Guardar PDF"}</span>
@@ -861,7 +858,7 @@ export function EInvoiceStudioApp({
               <button
                 type="button"
                 onClick={handleDownloadGeneratedXml}
-                className="h-10 px-5 rounded-lg bg-neutral-900 hover:bg-neutral-800 text-white text-xs font-medium inline-flex items-center gap-2 cursor-pointer"
+                className="h-10 px-5 rounded-lg bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold inline-flex items-center gap-2 shadow-xs cursor-pointer transition-colors"
               >
                 <Download className="w-4 h-4" />
                 <span>
