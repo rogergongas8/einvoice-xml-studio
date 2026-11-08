@@ -1,0 +1,18 @@
+# XMLInvoice.studio — Global E-Invoice XML Reader, EN 16931 Validator & Generator
+
+> Free, 100% client-side browser utility to read, validate, convert, and generate official European electronic invoices in XML format (`PEPPOL BIS Billing 3.0 / OASIS UBL 2.1`, German `XRechnung 3.0`, `ZUGFeRD / Factur-X CII`, and Spanish `Facturae 3.2.2`).
+
+## Core Capabilities
+- **Read & Convert E-Invoice XML to Human PDF & CSV**: Parses `.xml` e-invoices using native browser `DOMParser` with zero server uploads. Extracts supplier/buyer VAT IDs, Leitweg-ID / DIR3 buyer references, IBAN payment instructions, line items, and tax totals.
+- **CEN EN 16931 Compliance Validator**: Verifies mandatory semantic rules (`BR-01` Specification ID, `BR-02` Invoice Number, `BR-03` Issue Date, `BR-06` Seller VAT & Name, `BR-07` Buyer Name, `BR-16` Minimum 1 Line Item, and `BR-CO-15` Mathematical Tax/Total coherence).
+- **Official E-Invoice XML Generator**: Interactive builder that outputs schema-ready XML files for `PEPPOL BIS Billing 3.0 (UBL 2.1)`, `XRechnung 3.0 (Germany)`, and `Facturae 3.2.2 (Spain)`.
+
+## Key Programmatic Tools
+- `/tools/xrechnung-viewer-online`: Free XRechnung XML Viewer & PDF Converter Online (Germany E-Rechnung)
+- `/tools/peppol-ubl-xml-viewer`: Free PEPPOL BIS 3.0 & UBL 2.1 XML Invoice Viewer & Validator
+- `/tools/zugferd-factur-x-xml-reader`: Free ZUGFeRD & Factur-X CII/UBL XML Reader & Validator
+- `/tools/facturae-xml-visor-pdf`: Free Facturae 3.2.2 XML to PDF Viewer & Converter Online
+- `/tools/xrechnung-generator-free`: Free XRechnung 3.0 XML Generator Online (Leitweg-ID & EN 16931)
+- `/tools/peppol-invoice-generator`: Free PEPPOL BIS Billing 3.0 UBL XML Invoice Generator
+- `/tools/xml-invoice-to-excel-csv`: Convert XML E-Invoice (UBL, XRechnung, Facturae) to Excel CSV
+- `/tools/en-16931-xml-validator`: Free EN 16931 E-Invoice XML Schema & Business Rules Validator
